@@ -9,22 +9,33 @@ html,body{height:100%;}
 .carousel,.item,.active{height:100%;}
 .carousel-inner{height:100%;}
 .fill{width:100%;height:100%;background-position:center;background-size:cover;}
-*/
+
 
 html,
 body {
     height: 100%;
 }
 
-.mgt8{
-    margin-top: 80px;
-}
-
 /* * * * * * * * * * * HEADER * * * * * * * * * * */
 .logo_main img{
     width: 500px;
+		left: 100px;
 }
 
+.logo_link{
+	position:absolute;
+	z-index: 10;
+}
+
+.masthead-nav li{
+	display:inline-block;
+}
+.masthead{
+	position: absolute;
+	z-index: 10;
+	right: 100px;
+	top: 50px;
+}
 /* * * * * * * * * * * SLIDER * * * * * * * * * * */
 
 .carousel-indicators li {
@@ -39,10 +50,18 @@ body {
 }
 
 /* * * * * * * * * * *  NAV   * * * * * * * * * * */
+
+.row{
+	position:absolute;
+	z-index: 10;
+}
+
 #nav-icon {
   width: 60px;
+	top: 120px;
   height: 45px;
-  position: relative;
+  position: absolute;
+	z-index: 10;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
