@@ -15,29 +15,25 @@ html,
 body {
     height: 100%;
 }
-
+.mgt70 {
+    margin-top: 70px;
+}
 /* * * * * * * * * * * HEADER * * * * * * * * * * */
 .logo_main img{
     width: 500px;
-		left: 100px;
+    margin-top: 10px;
 }
-
-.logo_link{
-	position:absolute;
-	z-index: 10;
-}
-
-.masthead-nav li{
-	display:inline-block;
-}
-.masthead{
-	position: absolute;
-	z-index: 10;
-	right: 100px;
-	top: 50px;
+.banner {
+    z-index: 100;
+    width: 100%;
+    border: none;
+    background: transparent;
+    position: absolute;
 }
 /* * * * * * * * * * * SLIDER * * * * * * * * * * */
-
+.carousel {
+    margin-bottom: 60px;
+}
 .carousel-indicators li {
     background-color: black;
 }
@@ -49,19 +45,17 @@ body {
 	opacity:0.9;
 }
 
-/* * * * * * * * * * *  NAV   * * * * * * * * * * */
-
-.row{
-	position:absolute;
-	z-index: 10;
+/* * * * * * * * * * *  BOOTSTRAP   * * * * * * * * * * */
+.carousel-control.right, .carousel-control.left{
+    background-image: none;
 }
+/* * * * * * * * * * *  NAV   * * * * * * * * * * */
 
 #nav-icon {
   width: 60px;
-	top: 120px;
   height: 45px;
-  position: absolute;
-	z-index: 10;
+  position: relative;
+  margin: 120px auto;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -78,7 +72,7 @@ body {
   position: absolute;
   height: 9px;
   width: 50%;
-  background: #000;
+  background: #fff;
   opacity: 1;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -155,6 +149,18 @@ body {
   left: calc(50% - 5px);
   top: 29px;
 }
-/* * * * * * * * * * * BUTTON * * * * * * * * * * */
+/* * * * * * * * * * * BUTTON NAV * * * * * * * * * * */
+
+.biliboard {
+	width: 70px;
+    margin-right: 10px;
+	padding: 20px;
+	text-align: center;
+	background: #fff;
+	color: #333;
+	font: 13px open, tahoma;
+}
+
+/* * * * * * * * * * * BLOCK * * * * * * * * * * */
 
 /* * * * * * * * * * * FOOTER * * * * * * * * * * */
