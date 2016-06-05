@@ -63,6 +63,10 @@ body {
   padding: 0;
 }
 
+.fixed {
+	position: fixed;
+}
+
 #list-menu{
 	margin-top: 180px;
 }
@@ -93,7 +97,7 @@ body {
 	z-index:99;
   width: 60px;
   height: 45px;
-  position: fixed;
+	position: absolute;
   margin: 120px 45px auto;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);

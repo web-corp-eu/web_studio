@@ -73,7 +73,7 @@
 						 <!-- Set the first background image using inline CSS below. -->
 						 <div class="fill" style="background-image:url('img/first_bg.jpg');"></div>
 						 <div class="carousel-caption">
-								 <h2>First slider</h2>
+								 <h2 class="desc">First slider</h2>
 						 </div>
 				 </div>
 
@@ -81,7 +81,7 @@
 						 <!-- Set the second background image using inline CSS below. -->
 						 <div class="fill" style="background-image:url('img/second_bg.jpg');"></div>
 						 <div class="carousel-caption">
-								 <h2>Second slider</h2>
+								 <h2 class="desc">Second slider</h2>
 						 </div>
 				 </div>
 
@@ -89,7 +89,7 @@
 						 <!-- Set the third background image using inline CSS below. -->
 						 <div class="fill" style="background-image:url('img/third_bg.jpg');"></div>
 						 <div class="carousel-caption">
-								 <h2>Third slider</h2>
+								 <h2 class="desc">Third slider</h2>
 						 </div>
 				 </div>
 		 </div>
