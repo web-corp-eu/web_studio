@@ -1,6 +1,4 @@
 // NAV BT3
-<<<<<<< HEAD
-
 $(document).ready(function(){
 	//sidebar menu
 	$('#nav-icon').click(function(){
@@ -22,12 +20,3 @@ $(document).ready(function(){
 		}
 	});
 });
-=======
-$(document).ready(function(){
-	$('#nav-icon').click(function(){
-		$(this).toggleClass('open');
-	});
-    
-});// NAV BT
-
->>>>>>> origin/master
