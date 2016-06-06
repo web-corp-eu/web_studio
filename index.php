@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="img/sm_logo.png" type="image/png">
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
+    
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" href="css/media.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
@@ -36,13 +36,19 @@
 
 
 		<div class="menu">
-      <ul id="list-menu">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Help</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
+          <img class="menu_logo" src="img/logo.png">
+          <ul id="list-menu" class="list-menu">
+            <li><a href="#" class="bt_effect">About</a></li>
+            <li><a href="#" class="bt_effect">Blog</a></li>
+            <li><a href="#" class="bt_effect">Help</a></li>
+            <li><a href="#" class="bt_effect">Contact</a></li>
+          </ul>
+          <ul id="social" class="group">
+            <li class="google_plus"><a href=""><img src="img/google_plus.png"></a></li>
+            <li class="linkedin"><a href=""><img src="img/linkedin.png"></a></li>
+            <li class="facebook"><a href=""><img src="img/facebook.png"></a></li>
+        </ul>
+        </div>
 
     <!-- Main body -->
 
@@ -239,20 +245,14 @@
   </div>
 <!------------------------------------------------------------------------------------------------------->
  <div class="container">
-    <ul id="imageGallery">
-        <li>
-            <a href=""><img id="thumb" src="" alt=""></a> 
-        </li>
-        <li>
-            <a href=""><img id="thumb" src="" alt=""></a>
-        </li>
-        <li>
-            <a href=""><img id="thumb" src="" alt=""></a>
-        </li>
-    </ul>
  
  </div>
-
+    
+    <button id="callme" class="call_btn" data-toggle="modal" data-target="#dlModal">
+            <div class="wave1"></div>
+            <div class="wave2"></div>
+			<span  class="glyphicon glyphicon-earphone" ></span>
+    </button>
 	<footer>
 	</footer>
 

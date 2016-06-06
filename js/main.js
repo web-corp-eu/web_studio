@@ -4,7 +4,7 @@ $(document).ready(function(){
 	$('#nb-close-toggle').click(function(){        
 		$(this).toggleClass('open');
 		if ($(this).hasClass('open')){
-			$(this).css('position','fixed');
+			//$(this).css('position','fixed');
 			$('.menu').animate({
 				left: "0px"
 			}, 500);
@@ -12,7 +12,7 @@ $(document).ready(function(){
 				left: "285px"
 			}, 500);
 		} else {
-			$(this).css('position','absolute');
+			//$(this).css('position','absolute');
 			$('.menu').animate({
 	      left: "-285px"
 	    }, 500);
@@ -20,7 +20,7 @@ $(document).ready(function(){
 	      left: "0px"
 	    }, 500);
 		}
-	});    
+	});    // NAV BAR =
     
       $('.pricing-table:nth-child(3)').addClass('pop-out'); 
 
@@ -44,5 +44,9 @@ $(document).ready(function(){
       this.classList.toggle('is-open');
       this.classList.toggle('is-closed');
 
+    }); // CALL BACK
+    $('#callme').hover(function(){
+      $(this).parent().toggleClass('hovered');
     });
+    
 });

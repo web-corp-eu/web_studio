@@ -25,7 +25,7 @@ body {
 /* * * * * * * * * * * HEADER * * * * * * * * * * */
 .logo_main img{
     width: 500px;
-    margin-top: 10px;
+    margin:10px 0 0 25px;
 }
 .banner {
     z-index: 100;
@@ -39,7 +39,7 @@ body {
     background-color: black;
 }
 .carousel-indicators .active {
-    background-color: grey;
+    background-color: #00c7ec;
 }
 
 .carousel-control{
@@ -69,10 +69,10 @@ body {
 }
 
 #list-menu{
-	margin-top: 180px;
+	margin-top: 100px;
 }
 
-.menu li {
+.menu .list-menu li {
   border-bottom: 1px solid #636366;
   font-family: 'Open Sans', sans-serif;
   line-height: 45px;
@@ -81,13 +81,121 @@ body {
   padding-top: 3px;
 }
 
-.menu a {
+.menu  a {
   color: #fff;
   font-size: 15px;
   text-decoration: none;
   text-transform: uppercase;
 }
+.menu_logo{
+    width: 170px;
+    margin-left: 60px;
+}
+/* * * * * * * * * * SOCIAL NETWORK * * * * * * * * * * */
+.group li{
+    float: left;
+    margin: 30px;
+}
+.group li a img { background: url(images/sprite.png) no-repeat; display: block; width: 30px; height: 32px; position: relative; z-index: 10;
+    -webkit-transition: -webkit-transform 0.4s ease-out;
+    -moz-transition: -moz-transform 0.4s ease-out;
+    transition: transform 0.4s ease-out;
+}
+.group li a:hover img {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+/* * * * * * * * * * *  EFFECT BTN * * * * * * * * * * */
+.bt_effect {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  border-radius: 5px;
+  line-height: 3em;
+  padding-left: 5em;
+  padding-right: 5em;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.list-menu li:hover {
+  color: white;
+  box-shadow: 0 0 30px 0 rgba(0, 199, 236, 0.5);
+  background-color: #00c7ec;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.list-menu li a:hover:before {
+  -webkit-animation: shine 0.5s 0s linear;
+  -moz-animation: shine 0.5s 0s linear;
+  animation: shine 0.5s 0s linear;
+}
+.list-menu li a:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+.list-menu li a:before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: white;
+  box-shadow: 0 0 15px 3px white;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
 
+@-webkit-keyframes shine {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+@-moz-keyframes shine {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+@keyframes shine {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
 /* * * * * * * * * * *  BOOTSTRAP   * * * * * * * * * * */
 .carousel-control.right, .carousel-control.left{
     background-image: none;
@@ -95,7 +203,7 @@ body {
 /* * * * * * * * * * *  NAV   * * * * * * * * * * */
 #nb-close-toggle {
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   z-index: 999;
   margin: 110px 45px auto;
   display: block;
@@ -245,7 +353,7 @@ path, line {
   padding: 20px;
 }
 .button {
-  background-color: #1caa98;
+  background-color: #00B2EC;
   padding: 10px 20px;
   margin: 15px;
   font-weight: bold;
@@ -253,8 +361,10 @@ path, line {
   text-decoration: none;
 }
 .button:hover {
-  background-color: #64cec0;
+  background-color: #00c7ec;
   transition-duration: 0.3s;
+  text-decoration: none;
+  color: #fff;  
 }
 /* * * * * * * * * * * PENSIL * * * * * * * * * * */
 @import url(https://fonts.googleapis.com/css?family=Exo+2:400,900,800,700,600,500,300,200,100);
@@ -322,4 +432,59 @@ path, line {
   font-size: 32px;
 }
 
+/* * * * * * * * * *  CALL BACK * * * * * * * * * */
+.call_btn{
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	color: #fff;
+	background-color: #00c7ec;
+	border: none;
+	z-index: 999;
+}
+.glyphicon {
+    line-height: 2;
+}
+.wave1 {
+    display: block;
+    border-radius: 50%;
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    border: 2px solid #00c7ec;
+    bottom: 50px;
+    right: 50px;
+    z-index: 9999;
+    animation: callwave 1.5s linear infinite;
+}
+.wave2 {
+  display: block;
+    border-radius: 50%;
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    border: 2px solid #00c7ec;
+    bottom: 50px;
+    right: 50px;
+    z-index: 9999;
+    animation: callwave2 1.5s linear infinite;
+}
+@keyframes callwave {
+  from {width: 45px; height: 45px; bottom: 50px;
+    right: 50px;}
+  to {width: 105px; height: 105px; bottom: 20px;
+    right: 20px; opacity: 0;}
+}
+@keyframes callwave2 {
+  55% {width: 45px; height: 45px; bottom: 50px;
+    right: 50px; opacity: 1;}
+  to {width: 95px; height: 95px; bottom: 25px;
+    right: 25px; opacity: 0;}
+}
+.hovered .wave1, .hovered .wave2 {
+  animation: none;
+}
 /* * * * * * * * * * * FOOTER * * * * * * * * * * */
