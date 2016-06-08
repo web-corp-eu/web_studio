@@ -189,7 +189,7 @@
   <p>Our packages</p>
   </div>
 <!------------------------------------------------------------------------------------------------------->	
-<div class="pricing-tables block">
+<div class="pricing-tables block container">
     <ul class="pricing-table col-lg-3">
       <li class="title">Basic</li>
       <li class="price">$150</li>
@@ -245,16 +245,73 @@
   </div>
 <!------------------------------------------------------------------------------------------------------->
  <div class="container">
- 
- </div>
-    
-    <button id="callme" class="call_btn" data-toggle="modal" data-target="#dlModal">
+    <div class="flip-3d">
+      <figure>
+        <img src="img/hfn.jpg" alt>
+     <figcaption><p>Queenstown</p><br><a href="#" class="button">Go to the website</a></figcaption>
+    </figure>
+    </div>
+
+    <div class="flip-3d">
+      <figure>
+        <img src="img/hfn.jpg" alt>
+       <figcaption><p>Queenstown</p><br><a href="#" class="button">Go to the website</a></figcaption>
+      </figure>
+      </div>
+    <div class="flip-3d">
+      <figure>
+        <img src="img/hfn.jpg" alt>
+     <figcaption><p>Queenstown</p><br><a href="#" class="button">Go to the website</a></figcaption>
+     
+      </figure>
+    </div>
+ </div>    
+	<footer>
+		<div class="main_footer">
+			<div class="container">
+				<div class="row">
+
+				</div>
+			</div>
+		</div>
+
+		<div class="copyright_block">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="copy_txt">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, numquam.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+				
+		<button id="callme" class="call_btn" data-toggle="modal" data-target="#dlModal">
             <div class="wave1"></div>
             <div class="wave2"></div>
 			<span  class="glyphicon glyphicon-earphone" ></span>
-    </button>
-	<footer>
+        </button>
+        
 	</footer>
+	
+	<div class="modal fade" id="dlModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">CallBack</h4>
+          </div>
+          <div class="modal-body">
+            <form action="#" id="dlForm">
+                <input type="text" class="form-control" placeholder="Ваше имя">
+                <input type="email" class="form-control" placeholder="E-Mail">
+                <input type="password" class="form-control" placeholder="Пидумайте пароль">
+                <a href="#" class="button my_btn btn_md btn-block">Send</a>
+            </form>
+          </div>
+      </div>
+    </div>
 
 	<script src="libs/jquery/jquery-2.1.4.min.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
