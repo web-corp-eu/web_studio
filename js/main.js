@@ -47,6 +47,11 @@ $(document).ready(function(){
     }); // CALL BACK
     $('#callme').hover(function(){
       $(this).parent().toggleClass('hovered');
+    });// myCarousel
+   
+    $('#myCarousellogo').carousel({
+	interval: 10000	})
+    $('#myCarousellogo').on('slid.bs.carousel', function() {
+    	//alert("slid");
     });
-    
 });

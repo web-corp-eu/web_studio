@@ -23,7 +23,7 @@
 			<header>
 			<div class="banner">
 			  <div class="container">
-			    <div id="nb-close-toggle" class="">
+			    <div id="nb-close-toggle" class="nb-close-toggle">
                   <div class="top"></div>
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
                     <path class="circle" fill="none" stroke-width="2" stroke-miterlimit="10" d="M16,32h32c0,0,11.723-0.306,10.75-11
@@ -63,9 +63,9 @@
 			            <li><a href="" class="biliboard"><span>Blog</span></a></li>
 			          </ul>
 			      </nav>
-			   </div>
-			</div>
-			</header>
+           </div>
+        </div>
+    </header>
  <div id="myCarousel" class="carousel slide">
 		 <!-- Indicators -->
 		 <ol class="carousel-indicators">
@@ -111,16 +111,11 @@
 		 </a>
 </div>
 <div class="container marketing">
-<!------------------------------------------------------------------------------------------------------->	
-  <div class="block col-lg-12">
-  <div class="pensil">
-  <span></span>
-  <i class="fa fa-pencil fa-3x"></i>
+<!----------------------------------------------------------------------------------------------------------SECTION-->	
+  <div class="block col-lg-12 ">
+      <h2 class="section-heading">Our services</h2>
   </div>
-      <p>Our services</p>
-  </div>
-<!------------------------------------------------------------------------------------------------------->
-      <!-- Three columns of text below the carousel -->
+<!------------------------------------------------------------------------------------------------------SKILL BLOCK-->
 <div class="row">
             <div class="col-6 col-sm-6 col-lg-3 panel-info">
               <div class="panel-heading ">Heading</div>
@@ -180,15 +175,11 @@
             </div><!--/span-->
           </div>    
         </div>
-<!------------------------------------------------------------------------------------------------------->	
+<!----------------------------------------------------------------------------------------------------------SECTION-->	
   <div class="block col-lg-12">
-  <div class="pensil">
-  <span></span>
-  <i class="fa fa-pencil fa-3x"></i>
+  <h2 class="section-heading">Our services</h2>
   </div>
-  <p>Our packages</p>
-  </div>
-<!------------------------------------------------------------------------------------------------------->	
+<!------------------------------------------------------------------------------------------------------PRICE BLOCK-->	
 <div class="pricing-tables block container">
     <ul class="pricing-table col-lg-3">
       <li class="title">Basic</li>
@@ -235,15 +226,11 @@
       <li class="cta-button"><a href="#" class="button">Buy Now</a></li>
     </ul>
 </div>
-<!------------------------------------------------------------------------------------------------------->	
+<!----------------------------------------------------------------------------------------------------------SECTION-->	
   <div class="block col-lg-12">
-  <div class="pensil">
-  <span></span>
-  <i class="fa fa-pencil fa-3x"></i>
+    <h2 class="section-heading">Our services</h2>
   </div>
-      <p>Latest Projects</p>
-  </div>
-<!------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------LATEST PROJECT-->
  <div class="container">
     <div class="flip-3d">
       <figure>
@@ -251,7 +238,6 @@
      <figcaption><p>Queenstown</p><br><a href="#" class="button">Go to the website</a></figcaption>
     </figure>
     </div>
-
     <div class="flip-3d">
       <figure>
         <img src="img/hfn.jpg" alt>
@@ -265,11 +251,110 @@
      
       </figure>
     </div>
- </div>    
+ </div>
+<!------------------------------------------------------------------------------------------------------->
+<div class="container">
+    <div class="col-md-12">
+        <div class="well">
+            <div id="myCarousellogo" class="carousel slide">
+                
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <a href="#x"><img src="img/logo_work1.jpg" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3">
+                                <a href="#x"><img src="img/logo_work2.jpg" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3">
+                                <a href="#x"><img src="img/logo_work1.jpg" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3">
+                                <a href="#x"><img src="img/logo_work2.jpg" alt="Image" class="img-responsive"></a>
+                            </div>
+                        </div>
+                        <!--/row-->
+                    </div>
+                    <!--/item-->
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <a href="#x"><img src="img/logo_work1.jpg" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3">
+                                <a href="#x"><img src="img/logo_work2.jpg" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3">
+                                <a href="#x"><img src="img/logo_work1.jpg" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3">
+                                <a href="#x"><img src="img/logo_work2.jpg" alt="Image" class="img-responsive"></a>
+                            </div>
+                        </div>
+                        <!--/row-->
+                    </div>
+                        <!--/row-->
+                    </div>
+                </div>
+                <!--/carousel-inner--> <a class="left carousel-control" href="#myCarousellogo" data-slide="prev">‹</a>
+
+                <a class="right carousel-control" href="#myCarousellogo" data-slide="next">›</a>
+            </div>
+            <!--/myCarousel-->
+        </div>
+        <!--/well-->
+    </div>
+</div>
+<!----------------------------------------------------------------------------------------------------------FOOTER-->
 	<footer>
 		<div class="main_footer">
 			<div class="container">
 				<div class="row">
+                    <section id="contact">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12 text-center">
+                                    <h2 class="section-heading">Contact Us</h2>
+                                    <h3 class="section-subheading text-muted"></h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <form name="sentMessage" id="contactForm" novalidate="">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required="" data-validation-required-message="Please enter your name.">
+                                                    <p class="help-block text-danger"></p>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required="" data-validation-required-message="Please enter your email address.">
+                                                    <p class="help-block text-danger"></p>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required="" data-validation-required-message="Please enter your phone number.">
+                                                    <p class="help-block text-danger"></p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <textarea class="form-control" placeholder="Your Message *" id="message" required="" data-validation-required-message="Please enter a message."></textarea>
+                                                    <p class="help-block text-danger"></p>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                            <div class="col-lg-12 text-center">
+                                                <div id="success"></div>
+                                                <button type="submit" class="button">Send Message</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
 				</div>
 			</div>
@@ -280,22 +365,24 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="copy_txt">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, numquam.
+							<div class="hearts">
+                                <p>Made with<i class="fa fa-heart fa-2x heart"></i> by WebCorp</p>
+                            </div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-				
+			<!--	
 		<button id="callme" class="call_btn" data-toggle="modal" data-target="#dlModal">
             <div class="wave1"></div>
             <div class="wave2"></div>
-			<span  class="glyphicon glyphicon-earphone" ></span>
+			<span  class="glyphicon glyphicon-earphone"></span>
         </button>
-        
+        -->
 	</footer>
-	
-	<div class="modal fade" id="dlModal">
+
+	<!--<div class="modal fade" id="dlModal">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -306,12 +393,12 @@
             <form action="#" id="dlForm">
                 <input type="text" class="form-control" placeholder="Ваше имя">
                 <input type="email" class="form-control" placeholder="E-Mail">
-                <input type="password" class="form-control" placeholder="Пидумайте пароль">
+                <input type="password" class="form-control" placeholder="Пароль">
                 <a href="#" class="button my_btn btn_md btn-block">Send</a>
             </form>
           </div>
       </div>
-    </div>
+    </div>-->
 
 	<script src="libs/jquery/jquery-2.1.4.min.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>

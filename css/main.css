@@ -19,7 +19,7 @@ body {
     margin-top: 70px;
 }
 .block {
-    margin: 50px 0;
+    margin: 30px 0;
     text-align: center;
 }
 /* * * * * * * * * * * HEADER * * * * * * * * * * */
@@ -354,6 +354,9 @@ path, line {
   font-weight: bold;
   color: white;
   text-decoration: none;
+  border: none;
+  border-radius: 4px;
+    
 }
 .button:hover {
   background-color: #00c7ec;
@@ -425,7 +428,7 @@ div.flip-3d figure:after {
     display: none;
   }
 }
-/* * * * * * * * * * * PENSIL * * * * * * * * * * */
+/* * * * * * * * * * * PENSIL * * * * * * * * * * 
 @import url(https://fonts.googleapis.com/css?family=Exo+2:400,900,800,700,600,500,300,200,100);
 
 @-moz-keyframes line {
@@ -489,7 +492,7 @@ div.flip-3d figure:after {
   text-align: center;
   color: #000;
   font-size: 32px;
-}
+}*/
 
 /* * * * * * * * * *  CALL BACK * * * * * * * * * */
 .call_btn{
@@ -546,9 +549,69 @@ div.flip-3d figure:after {
 .hovered .wave1, .hovered .wave2 {
   animation: none;
 }
+/* * * * * * * * * * * carusel * * * * * * * * * * */
+
+/* * * * * * * * * * * contact form * * * * * * * * * * */
+section#contact .section-heading {
+    color: #fff;
+}
+
+section#contact .form-group {
+    margin-bottom: 25px;
+}
+
+section#contact .form-group input,
+section#contact .form-group textarea {
+    padding: 20px;
+}
+
+section#contact .form-group input.form-control {
+    height: auto;
+}
+
+section#contact .form-group textarea.form-control {
+    height: 236px;
+}
+
+section#contact .form-control:focus {
+    border-color: #1ee2e7;
+    box-shadow: none;
+}
+
+section#contact::-webkit-input-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact:-moz-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact::-moz-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact:-ms-input-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact .text-danger {
+    color: #e74c3c;
+}
 /* * * * * * * * * * * FOOTER * * * * * * * * * * */
 .main_footer{
-	padding: 70px 0;
+	padding: 20px 0;
 	background-color: #202024;
 }
 .footer_item{
@@ -563,15 +626,55 @@ div.flip-3d figure:after {
 .footer_item p{
 	font-size: 14px;
 	color: #9d9fb2;
+    margin: 0;
 }
 
 .copyright_block{
 	background-color: #333333;
 	text-align: center;
+    padding: 20px 0;
 }
 .copy_txt{
 	color: #9d9fb2;
 }
+/* * * * * * * * * * * scroll * * * * * * * * * * */
+.carousel-control {
+  padding-top:5%;
+  width:5%;
+}
+
+/* * * * * * * * * * * HEART * * * * * * * * * * */
+@keyframes expand {
+  from {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.5);
+  }
+}
+.hearts {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hearts i {
+  color: #e74c3c;
+  padding: 0 15px;
+  animation: expand 1500ms ease-in-out infinite;
+}
+
+.hearts:nth-child(2) {
+  animation-delay: 300ms;
+}
+
+.hearts:nth-child(3) {
+  animation-delay: 600ms;
+}
+.hearts .fa-2x{
+    font-size: 1em;
+}
+
 /* * * * * * * * * * * MODALS * * * * * * * * * * */
 #dlForm{
 	width: 70%;
