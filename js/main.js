@@ -1,7 +1,7 @@
 // NAV BT3
 $(document).ready(function(){
 	//sidebar menu
-	$('#nb-close-toggle').click(function(){        
+	$('#nb-close-toggle').click(function(){
 		$(this).toggleClass('open');
 		if ($(this).hasClass('open')){
 			//$(this).css('position','fixed');
@@ -21,10 +21,30 @@ $(document).ready(function(){
 	    }, 500);
 		}
 	});    // NAV BAR =
-    
-      $('.pricing-table:nth-child(3)').addClass('pop-out'); 
 
-      $('.pricing-table').hover( 
+
+			$('#myCarousel2').carousel({
+				interval: 10000
+			})
+
+			$('.carousel .item').each(function(){
+					var next = $(this).next();
+						if (!next.length) {
+							next = $(this).siblings(':first');
+				}
+				next.children(':first-child').clone().appendTo($(this));
+
+				if (next.next().length>0) {
+					next.next().children(':first-child').clone().appendTo($(this));
+				}
+				else {
+					$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+				}
+			});
+
+      $('.pricing-table:nth-child(3)').addClass('pop-out');
+
+      $('.pricing-table').hover(
         function() {
           if ( $(this).hasClass('pop-out') ) {
             /* do nothing */
@@ -37,18 +57,18 @@ $(document).ready(function(){
           $('.pricing-table:nth-child(3)').addClass('pop-out');
         }
       );
-    
+
     var $btn = document.getElementById('nb-close-toggle');
 
     $btn.addEventListener('click',function(e){
       this.classList.toggle('is-open');
       this.classList.toggle('is-closed');
-
+      
     }); // CALL BACK
     $('#callme').hover(function(){
       $(this).parent().toggleClass('hovered');
     });// myCarousel
-   
+
     $('#myCarousellogo').carousel({
 	interval: 10000	})
     $('#myCarousellogo').on('slid.bs.carousel', function() {
