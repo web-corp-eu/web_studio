@@ -8,7 +8,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-    <link rel="shortcut icon" href="img/sm_logo.png" type="image/png">
+    <link rel="shortcut icon" href="img/logo_title.png" type="image/png">
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
@@ -47,7 +47,7 @@
             <li class="google_plus"><a href=""><img src="img/ico/google_plus.png"></a></li>
             <li class="linkedin"><a href=""><img src="img/ico/linkedin.png"></a></li>
             <li class="facebook"><a href=""><img src="img/ico/facebook.png"></a></li>
-        </ul>
+          </ul>
         </div>
 
     <!-- Main body -->
@@ -56,8 +56,8 @@
 				<div class="logo_main col-lg-4 col-lg-offset-2">
 							<a href=""><img src="img/logo.png"></a>
 			  </div>
-			      <nav class="navbar col-lg-3 col-lg-offset-2 mgt70">
-			          <ul class="nav">
+			      <nav class="col-lg-3 col-lg-offset-2 mgt70">
+			          <ul class="">
 			            <li class="block_nav"><a href="" class="rolling-link"><span data-hover="About">About</span></a></li>
 			            <li class="block_nav"><a href="" class="rolling-link"><span data-hover="Portfolio">Portfolio</span></a></li>
 			            <li class="block_nav"><a href="" class="rolling-link"><span data-hover="Blog">Blog</span></a></li>
@@ -137,7 +137,7 @@
                 <img src="img/ico/ico_seo.jpg" />
                 <div class="mask">
                     <h2>Hover Style #3</h2>
-                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                    <p>Комплексный маркетинг: SEO-оптимизация, контекстная реклама, SMM, медийная реклама, крауд-маркетинг, аудит-сайта, аналитика...</p>
                     <a href="#" class="button">Read More</a>
                 </div>
             </div>
@@ -175,9 +175,9 @@
             <div class="view view-third">
                 <img src="img/ico/ico_sitehelp.jpg" />
                 <div class="mask">
-                    <h2>Hover Style #3</h2>
-                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
-                    <a href="#" class="button">Read More</a>
+                    <h2>Поддержка сайтов</h2>
+                    <p>Занимаемся комплексной поддержкой и развитием сайтов наших клиентов. Доработка систем управления, контент-менеджмент (вебмастеринг), администрирование...</p>
+                    <a href="#" class="button">Подробнее</a>
                 </div>
             </div>
         </div>
@@ -480,11 +480,31 @@
     <div class="copyright_block">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                  <div class="ft_lftBlock col-lg-4">
+                    <div class="block_tel"><a href="tel:+380968911101" class="rolling-link"><span data-hover="+38(096)891-11-01">+38(096)891-11-01</span></a></div>
+                    <div class="block_tel"><a href="tel:+380954511181" class="rolling-link"><span data-hover="+38(095)451-11-81">+38(095)451-11-81</span></a></div>
+                    <div class="block_tel"><a href="tel:+380930611101" class="rolling-link"><span data-hover="+38(093)061-11-01">+38(093)061-11-01</span></a></div>
+                  </div>
+                <div class="ft_lftBlock col-lg-4">
                     <div class="copy_txt">
                             <p>WebCorp Creative Studio © 2015</p>
+                            <ul class="group">
+                                <li class="google_plus"><a href=""><img src="img/ico/google_plus.png"></a></li>
+                                <li class="linkedin"><a href=""><img src="img/ico/linkedin.png"></a></li>
+                                <li class="facebook"><a href=""><img src="img/ico/facebook.png"></a></li>
+                            </ul>
                     </div>
                 </div>
+                <!--<div class="stage col-lg-2 col-lg-offset-2" style="width: 80px; height: 80px;margin-top: 50px;"> 
+                    <div class="cube"> 
+                        <div class="side1"><img src="img/logo_sm_bl.png" alt=""></div> 
+                        <div class="side2"><img src="img/logo_sm_bl.png" alt=""></div> 
+                        <div class="side3"><img src="img/logo_sm_bl.png" alt=""></div> 
+                        <div class="side4"><img src="img/logo_sm_bl.png" alt=""></div> 
+                        <div class="side5"><img src="img/logo_sm_bl.png" alt=""></div> 
+                        <div class="side6"><img src="img/logo_sm_bl.png" alt=""></div> 
+                    </div> 
+                </div>-->
             </div>
         </div>
     </div>

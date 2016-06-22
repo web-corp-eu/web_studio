@@ -4,15 +4,7 @@ body{
 	min-width: 320px;
 	height: 10000px;
 }
-
 html,body{height:100%;}
-
-
-
-html,
-body {
-    height: 100%;
-}
 .mgt70 {
     margin-top: 70px;
 }
@@ -58,19 +50,34 @@ body {
 .carousel-indicators .active {
     background-color: #00c7ec;
 }
+.carousel-indicators li:hover {
+    background: #e84545;
+}
 
 .carousel-control{
 	opacity:0.9;
 }
+.icon-prev:hover, .icon-next:hover{
+    color: #e84545;
+}
 /* * * * * * * * * * *  NAV LEFT  * * * * * * * * * * */
 @import url(http://fonts.googleapis.com/css?family=Abril+Fatface|Bangers|Passion+One:700);
 .block_nav {
-  font-size: 2rem;
+  font-size: 1.6rem;
   line-height: 1;
+  float: left;
+  margin-right: 5px;
+  list-style: none;
+  padding-left: 0;
 }
-/*
- * rolling-link-1
- */
+.block_tel {
+  font-size: 1.6rem;
+  line-height: 1;
+  margin: 10px;
+  list-style: none;
+    
+}
+/* * * * rolling-link * * * */
 a.rolling-link {
   position: relative;
   display: inline-block;
@@ -84,8 +91,8 @@ a.rolling-link {
 a.rolling-link span {
   position: relative;
   display: inline-block;
-  padding: 0 30px;
-  background: #F06;
+  padding: 0 5px;
+  /*background: #F06;*/
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
   transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
@@ -101,7 +108,7 @@ a.rolling-link span::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #330014;
+  background: #fff;/*#330014*/
   content: attr(data-hover);
   -webkit-transition: background 0.3s  ease-in-out;
   transition: background 0.3s  ease-in-out;
@@ -109,15 +116,15 @@ a.rolling-link span::before {
           transform: rotateX(-90deg);
   -webkit-transform-origin: 50% 0;
           transform-origin: 50% 0;
+    text-align: center;
 }
 a.rolling-link:hover span, a.rolling-link:active span, a.rolling-link:focus span {
   -webkit-transform: rotateX(90deg) translateY(-22px);
           transform: rotateX(90deg) translateY(-22px);
 }
 a.rolling-link:hover span::before, a.rolling-link:active span::before, a.rolling-link:focus span::before {
-  background: #F06;
+  background: #e84545;
 }
-
 /* * * * * * * * * * *  Side bar menu   * * * * * * * */
 .menu {
   background: #202024  repeat left top;
@@ -126,7 +133,6 @@ a.rolling-link:hover span::before, a.rolling-link:active span::before, a.rolling
   position: fixed;
   width: 285px;
 }
-
 .menu ul {
   border-top: 1px solid #636366;
 	margin-top: 50px;
@@ -134,15 +140,12 @@ a.rolling-link:hover span::before, a.rolling-link:active span::before, a.rolling
   margin: 0;
   padding: 0;
 }
-
 .fixed {
 	position: fixed;
 }
-
 #list-menu{
 	margin-top: 100px;
 }
-
 .menu .list-menu li {
   border-bottom: 1px solid #636366;
   font-family: 'Open Sans', sans-serif;
@@ -151,7 +154,6 @@ a.rolling-link:hover span::before, a.rolling-link:active span::before, a.rolling
   padding-left: 20px;
   padding-top: 3px;
 }
-
 .menu  a {
   color: #fff;
   font-size: 15px;
@@ -227,7 +229,6 @@ a.rolling-link:hover span::before, a.rolling-link:active span::before, a.rolling
   -o-transform: skewX(-20deg);
   transform: skewX(-20deg);
 }
-
 @-webkit-keyframes shine {
   from {
     opacity: 0;
@@ -343,8 +344,6 @@ a.rolling-link:hover span::before, a.rolling-link:active span::before, a.rolling
 path, line {
   stroke-linecap: round;
 }
-
-
 #nb-close-toggle.is-closed .bottom {
   -webkit-transform: translateX(-4.5px) rotate(45deg);
   -ms-transform: translateX(-4.5px) rotate(45deg);
@@ -371,7 +370,6 @@ path, line {
    display: inline-block;
    margin-left: 25px;
 }
-
 .title_block {
     background-color: #e84545;
     border-radius: 8px 8px 0 0;
@@ -382,7 +380,6 @@ path, line {
     font-weight: 600;
     font-size: larger;
 }
-
 .view {
    width: 300px;
    height: 250px;
@@ -438,7 +435,6 @@ path, line {
    -moz-box-shadow: 0 0 5px #000;
    box-shadow: 0 0 5px #000;
 }
-
 .view-third img {
    -webkit-transition: all 0.2s ease-in;
    -moz-transition: all 0.2s ease-in;
@@ -629,19 +625,16 @@ div.flip-3d {
   display: inline-block;
   margin: 2%;
 }
-
 div.flip-3d figure {
   position: relative;
   transform-style: preserve-3d;
   transition: 1s transform;
   font-size: 1.6rem;
 }
-
 div.flip-3d figure img {
   width: 100%;
   height: auto;
 }
-
 div.flip-3d figure figcaption {
   position: absolute;
   width: 100%;
@@ -654,15 +647,12 @@ div.flip-3d figure figcaption {
   transition: 1s .5s opacity;
   padding-top: 50px;
 }
-
 div.flip-3d:hover figure {
   transform: rotateY(.5turn);
 }
-
 div.flip-3d:hover figure figcaption {
   opacity: 1;
 }
-
 div.flip-3d figure:after {
   content: " ";
   display: block;
@@ -671,7 +661,6 @@ div.flip-3d figure:after {
   transform: rotateX(90deg);
   background-image: radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0) 100%);
 }
-
 @media screen and (max-width: 800px) {
   div#flip-3d {
     perspective-origin: center top;
@@ -813,64 +802,59 @@ div.flip-3d figure:after {
 section#contact .section-heading {
     color: #fff;
 }
-
 section#contact .form-group {
     margin-bottom: 25px;
 }
-
 section#contact .form-group input,
 section#contact .form-group textarea {
     padding: 20px;
 }
-
 section#contact .form-group input.form-control {
     height: auto;
 }
-
 section#contact .form-group textarea.form-control {
     height: 236px;
 }
-
 section#contact .form-control:focus {
     border-color: #1ee2e7;
     box-shadow: none;
 }
-
 section#contact::-webkit-input-placeholder {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #bbb;
 }
-
 section#contact:-moz-placeholder {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #bbb;
 }
-
 section#contact::-moz-placeholder {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #bbb;
 }
-
 section#contact:-ms-input-placeholder {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #bbb;
 }
-
 section#contact .text-danger {
     color: #e74c3c;
 }
 /* * * * * * * * * * * FOOTER * * * * * * * * * * */
+footer {
+    background: url('../img/bg_ft.png') repeat;
+}
+
 .main_footer{
 	padding: 20px 0;
-	background-color: #202024;
+	/*background-color: #202024;*/
+    background: url('../img/bg_ft_top.png') repeat-x top;
 }
 .footer_item{
 	text-align: center;
@@ -886,15 +870,76 @@ section#contact .text-danger {
 	color: #9d9fb2;
     margin: 0;
 }
-
 .copyright_block{
-	background-color: #333333;
+	/*background-color: #202024;*/
 	text-align: center;
     padding: 5px 0;
+    background: url('../img/bg_smG.png') repeat-x top;
 }
 .copy_txt{
 	color: #9d9fb2;
 }
+.copy_txt ul li{
+    list-style: none;
+}
+.ft_lftBlock{
+    margin-top: 10px;
+    background: url('../img/bg_smV.png') repeat-y right;
+}
+
+/* * * * * * * * * * * CUBE * * * * * * * * * * 
+.cube {
+    -webkit-animation-name: spincube;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 12s;
+
+    animation-name: spincube;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+    -webkit-transform-origin: 60px 60px 0;
+    -moz-transform-origin: 60px 60px 0;
+    -ms-transform-origin: 60px 60px 0;
+    transform-origin: 60px 60px 0;
+  }
+.cube div {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border: 1px solid #00B2EC;
+    background: rgba(255,255,255,0.6);
+    box-shadow: inset 0 0 20px #00B2EC;
+    text-align: center;
+    color: #00B2EC;
+} 
+.cube img{
+    width: 60px;
+} 
+.cube .side1 {
+    transform: translateZ(20px);
+}
+.cube .side2 {
+    transform: rotateY(90deg) translateZ(20px);
+}
+.cube .side3 {
+    transform: rotateY(90deg) rotateX(90deg) translateZ(20px);
+}	  
+.cube .side4 {
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(20px);
+}	  
+.cube .side5 {
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(20px);
+}   
+.cube .side6 {
+    transform: rotateX(-90deg) translateZ(20px);
+}*/
 /* * * * * * * * * * * scroll * * * * * * * * * * */
 .carousel-control {
   padding-top:5%;
